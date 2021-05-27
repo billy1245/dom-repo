@@ -90,9 +90,13 @@ function renderHtml() {
       cart[i].product.product_name +
       "</div>";
     html +=
-      '<div class="quantity">Qty : ' +
+      '<div class="quantity">Qty :  <i style="margin-left:5px; margin-right:5px; font-size:16px;" class="fas fa-plus" onclick="qtyAdd(' +
+      cart[i].product.product_id +
+      ')"></i>   ' +
       cart[i].product.product_qty +
-      "</div>";
+      '   <i class="fas fa-minus" onclick="qtyRemove(' +
+      cart[i].product.product_id +
+      ')" style="margin-left:5px; margin-right:5px; font-size:16px;"></i></div>';
     html +=
       '<div class="product-price">Price : $ ' +
       parseFloat(cart[i].product.product_price) *
@@ -108,7 +112,30 @@ function renderHtml() {
   calculeTotal(GrandTotal);
   ele.innerHTML = html;
 }
+//delete Qty
+var qtyAdd = (e) => {
+  for (var i = 0; i < cart.length; i++) {
+    if (cart[i].product.product_id == e) {
+      cart[i].product.product_qty =
+        parseInt(cart[i].product.product_qty) + 1;
+      renderHtml();
+    }
+  }
+};
+//delete Qty
 
+var qtyRemove = (e) => {
+  for (var i = 0; i < cart.length; i++) {
+    if (cart[i].product.product_id == e) {
+      if (cart[i].product.product_qty == 1) {
+        deleteItem(e);
+      } else {
+        cart[i].product.product_qty = cart[i].product.product_qty - 1;
+        renderHtml();
+      }
+    }
+  }
+};
 // Grand Total calc
 
 var calculeTotal = (GrandTotal) => {

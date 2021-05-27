@@ -1,0 +1,448 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f192f;
+  height: 100vh;
+  width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+p {
+  margin: 0;
+}
+nav {
+  height: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.flex-one {
+  flex: 1;
+  display: flex;
+}
+.left {
+}
+.center {
+  font-size: 44px;
+  font-weight: bold;
+  color: #e99f48;
+}
+.right {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 30px;
+  align-items: center;
+}
+.right p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.bg-profil {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  background: url(https://www.red-fern.co.uk/images/2Development/back-end-development.jpg);
+  background-size: 100px;
+  margin: 0 30px;
+  border-radius: 50%;
+}
+
+.logo-top-left {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100px;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  background: #e99f48;
+}
+.left-items {
+  width: 200px;
+  height: 100%;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-items {
+  padding: 5px 10px;
+}
+
+.left-items li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.centered {
+  display: grid;
+  place-items: center;
+}
+.active {
+  border-bottom: solid 2px #e99f48 !important;
+}
+.container {
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 7vw;
+  height: 100vh;
+}
+.social {
+  flex-direction: column;
+  color: white;
+  font-size: 24px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.point {
+  flex-direction: column;
+  color: white;
+  font-size: 24px;
+  align-items: center;
+}
+.point-one {
+  border: solid 9px white;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+.point-two {
+  border: solid 7px white;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+.point-three {
+  border: solid 5px white;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+.point-for {
+  border: solid 3px white;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+}
+.content-center {
+  margin: 20px 0px 0px 50px;
+  width: 50vw;
+  height: 90vh;
+}
+.titre {
+  color: white;
+  font-size: 38px;
+  font-weight: bold;
+}
+.content-center p {
+  margin: 30px 0;
+  color: #596370;
+  font-size: 20px;
+}
+.separator {
+  width: 100%;
+  border-bottom: solid 4px #e99f48;
+}
+.login {
+  height: 25vh;
+  width: 100%;
+}
+.login h5 {
+  color: white;
+  font-size: 22px;
+}
+
+input[type="email"] {
+  height: 50px;
+  margin-right: 20px;
+  width: 80%;
+  border: transparent;
+  border-radius: 10px;
+  background: #252c41;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+button {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  background: #e99f48;
+  color: white;
+  border: solid 1px #e99f48;
+  border-radius: 5px;
+}
+.content-left {
+  margin: 30px 0px 0px 50px;
+  width: 43vw;
+}
+.card {
+  margin: 20px;
+  width: 50%;
+  height: 100%;
+}
+.card h3 {
+  color: white;
+  font-size: 16px;
+  display: grid;
+  place-items: center;
+}
+.card-body {
+  height: 100%;
+  background: #252c41;
+  border: transparent;
+  border-radius: 10px;
+}
+.card-pic {
+  height: 50%;
+  background-image: url(https://rebot.me/assets/images/mini-avatars/636013.jpg?r=1503390468);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: transparent;
+  border-radius: 10px;
+}
+.card-body p {
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+.card-body h5 {
+  margin: 0;
+  padding: 10px;
+  color: white;
+  font-size: 22px;
+}
+.theme-two {
+  background: white;
+  height: 100vh;
+}
+nav {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.left-two {
+  color: black;
+  justify-content: center;
+  padding: 10px;
+}
+.center-two {
+  display: grid;
+  place-items: center;
+}
+.right-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  font-family: Honor;
+  color: black;
+  font-size: 54px;
+  font-weight: bold;
+}
+.nav-items-two {
+  margin: 20px;
+}
+
+.buyBtn {
+  border: solid 1px #f19494;
+  padding: 10px;
+  background: #f19494;
+  color: white;
+}
+.border-one {
+  border: solid 2px black;
+  border-radius: 10px;
+  width: 25px;
+  margin-bottom: 5px;
+}
+.border-two {
+  border: solid 2px black;
+  border-radius: 10px;
+  width: 15px;
+  margin-bottom: 5px;
+}
+.border-three {
+  border: solid 2px black;
+  border-radius: 10px;
+  width: 15px;
+  margin-bottom: 5px;
+}
+.left-content-two {
+  width: 50vw;
+  height: 90vh;
+}
+.top-content-two {
+  padding-top: 70px;
+  padding-left: 70px;
+}
+
+.right-content-two {
+  width: 50vw;
+  height: 90vh;
+  padding: 0;
+  margin: 0;
+}
+
+.titre-two {
+  font-size: 64px;
+  color: black;
+  font-weight: bold;
+}
+.titre-element {
+  letter-spacing: 10px;
+  color: #f19494;
+}
+.titre-element-two {
+  margin: 30px 0;
+  color: #e0e0e0;
+}
+.bg-right {
+  width: 90%;
+  height: 80vh;
+  background: url(https://www.rueducommerce.fr/medias/4b76793155f43abe907d5fbd1ba07bda/p_640x640/pw0028bl-1-efbe-w3cu.jpg)
+    no-repeat;
+  background-size: 70%;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.bottom-content {
+  align-items: center;
+  justify-content: center;
+}
+.card-two {
+  margin-right: 20px;
+  margin-left: 15px;
+  width: 200px;
+  height: 270px;
+  background: white;
+  border: solid 1px white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card-body-two {
+  padding: 10px;
+}
+.titre-body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+.underline-body {
+  color: gray;
+  font-size: 12px;
+  margin-left: 100px;
+}
+.card-images {
+  width: 100%;
+  height: 50%;
+  background: url(https://gloimg.gbtcdn.com/images/pdm-product-pic/Electronic/2020/02/26/source-img/20200226181816_67677.jpg_500x500.jpg)
+    no-repeat;
+  background-size: 90%;
+}
+.card-images-purpel {
+  width: 100%;
+  height: 50%;
+  background: url(https://images-na.ssl-images-amazon.com/images/I/61bmD3HnaqL._AC_SX522_.jpg)
+    no-repeat;
+  background-size: 65%;
+}
+.card-images-white {
+  width: 100%;
+  height: 50%;
+  background: url(https://vedroid.com/img/smartwatches/honor-watch-es-icelandic-white/08.jpg)
+    no-repeat;
+  background-size: 60%;
+}
+
+.side-bare-nav {
+  display: flex;
+  color: black;
+  list-style-type: none;
+  padding-top: 20px;
+  position: fixed;
+  overflow: hidden;
+  top: 10vh;
+  right: -30vw;
+  width: 30vw;
+  height: 100%;
+  transition: right 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 0.9;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+}
+.side-bare-nav-oppen {
+  right: 0;
+}
+.cart-btn {
+  font-size: 18px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.add-to-fav:hover {
+  color: red;
+}
+.add-to-fav-add {
+  color: red;
+}
+
+.add-to-fav {
+  color: black;
+}
+.card-shoping {
+  margin: 10px;
+  width: 100%;
+  height: 100px;
+  border: solid 2px white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  flex-direction: row;
+}
+.product-shoping {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.shoping-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+#shoping-cart {
+  width: 95%;
+  height: 70vh;
+}
+.totalsum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}

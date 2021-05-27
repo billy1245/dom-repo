@@ -1,0 +1,119 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="theme-two">
+      <nav>
+        <div class="flex-one left-two column">
+          <div class="border-one"></div>
+          <div class="border-two"></div>
+          <div class="border-three"></div>
+        </div>
+        <div class="flex-one center-two">
+          <div class="logo">honor</div>
+        </div>
+        <div class="flex-one right-two">
+          <div class="nav-items-two">Home</div>
+          <div class="nav-items-two">Smartphone</div>
+          <div class="nav-items-two">Store</div>
+          <div class="nav-items-two cart-btn">
+            <i class="fas fa-shopping-cart"> </i
+            ><a id="items" data-item="0"> (0)</a>
+          </div>
+        </div>
+      </nav>
+      <div class="side-bare-nav js-site-nav" tabindex="-1" role="navigation">
+        <div id="shoping-cart"></div>
+        <div class="totalsum">
+          <div class="totalText">Total :</div>
+          <div class="grandTotal" id="grandTotal" data-total="0">0</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left-content-two">
+          <div class="column top-content-two">
+            <div class="titre-two">Smartwatch</div>
+            <p class="titre-element">ELEMENT SERIE</p>
+            <p class="titre-element-two">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
+              porro, aliquid soluta placeat recusandae consectetur animi cumque
+              deleniti cupiditate ab corporis atque
+            </p>
+          </div>
+          <div class="row bottom-content">
+            <div class="card-two">
+              <div
+                class="card-body-two"
+                data-id="1"
+                data-name="Dark"
+                data-price="10"
+                data-qty="1"
+              >
+                <div class="add-to-fav" id="fav" onclick="addToFav(event)">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="titre-body" data-name="Dark">Dark</div>
+                <p class="underline-body">Element</p>
+                <div class="card-images"></div>
+                <div class="price" data-price="20">$ 20</div>
+                <button onclick="addToCart(event)">add to cart</button>
+              </div>
+            </div>
+            <div class="card-two" id="card">
+              <div
+                class="card-body-two"
+                data-id="2"
+                data-name="white"
+                data-price="30"
+                data-qty="1"
+              >
+                <div class="add-to-fav" id="fav" onclick="addToFav(event)">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="titre-body" data-name="White">White</div>
+                <p class="underline-body">Element</p>
+                <div class="card-images-white"></div>
+                <div class="price" data-price="30">$ 30</div>
+                <button onclick="addToCart(event)">add to cart</button>
+              </div>
+            </div>
+            <div class="card-two" id="card">
+              <div
+                class="card-body-two"
+                data-id="3"
+                data-name="Purpel"
+                data-price="10"
+                data-qty="1"
+              >
+                <div class="add-to-fav" id="fav" onclick="addToFav(event)">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="titre-body">Purpel</div>
+                <p class="underline-body">Element</p>
+                <div class="card-images-purpel"></div>
+                <div class="price">$ 10</div>
+                <button onclick="addToCart(event)">add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-content-two">
+          <div class="bg-right"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="./scrypt.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>

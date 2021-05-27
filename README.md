@@ -1,2 +1,3 @@
-# dom-repo
-shoping-cart html js
+# shopping-cart-repo
+
+shopping cart html javascript

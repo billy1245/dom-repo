@@ -55,7 +55,7 @@ var toArray = (id, price, names, qty) => {
     }
   });
 
-  renderCartTable();
+  renderHtml();
 
   swal(
     "Product : " + id + "",
@@ -66,7 +66,7 @@ var toArray = (id, price, names, qty) => {
 
 // html render
 
-function renderCartTable() {
+function renderHtml() {
   var html = "";
   var ele = document.getElementById("shoping-cart");
   ele.innerHTML = "";
@@ -134,7 +134,7 @@ var deleteItem = (e) => {
         }
       }
 
-      renderCartTable();
+      renderHtml();
       decrementCart();
       swal("Poof! item from shoping-cart has been deleted!", {
         icon: "success",

@@ -22,7 +22,7 @@ var addToCart = (e) => {
   var price = e.target.parentNode.dataset.price;
   var names = e.target.parentNode.dataset.name;
   var qty = e.target.parentNode.dataset.qty;
-  incrementCart();
+  
   toArray(ids, price, names, qty);
 };
 // add obejct to array
@@ -48,12 +48,12 @@ var toArray = (id, price, names, qty) => {
         var cartItem = {
           product: i,
         };
-        
+        incrementCart();
         cart.push(cartItem);
       }
     }
   });
-
+  
   renderHtml();
 
   swal(
@@ -117,7 +117,6 @@ var qtyAdd = (e) => {
     if (cart[i].product.product_id == e) {
       cart[i].product.product_qty =
         parseInt(cart[i].product.product_qty) + 1;
-        incrementCart();
       renderHtml();
     }
   }
@@ -132,7 +131,6 @@ var qtyRemove = (e) => {
 
       } else {
         cart[i].product.product_qty = cart[i].product.product_qty - 1;
-        decrementCart();
         renderHtml();
       }
     }
@@ -171,7 +169,6 @@ var deleteItem = (e) => {
             
           }
           cart.splice(i, 1);
-         
 
           
         }
